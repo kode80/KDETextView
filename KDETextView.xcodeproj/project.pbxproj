@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20F91BA21B10C5CA00957FF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F91BA11B10C5CA00957FF7 /* main.m */; };
+		20F91BA41B10C5CA00957FF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F91BA31B10C5CA00957FF7 /* Images.xcassets */; };
+		20F91BA71B10C5CA00957FF7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20F91BA51B10C5CA00957FF7 /* MainMenu.xib */; };
+		20F91BB31B10C5CA00957FF7 /* KDETextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F91BB21B10C5CA00957FF7 /* KDETextViewTests.m */; };
+		20F91BC11B10C5FC00957FF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F91BBE1B10C5FC00957FF7 /* AppDelegate.m */; };
+		20F91BD31B10C67A00957FF7 /* libfreetype-gl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F91BD21B10C67A00957FF7 /* libfreetype-gl.a */; };
+		20F91BD61B10C74E00957FF7 /* KDETextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F91BD51B10C74E00957FF7 /* KDETextView.m */; };
+		20F91BDA1B10D2B600957FF7 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F91BD91B10D2B600957FF7 /* libfreetype.a */; };
+		20F91BE11B10DC1400957FF7 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = 20F91BE01B10DC1400957FF7 /* shaders */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20F91BAD1B10C5CA00957FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F91B911B10C5CA00957FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20F91B981B10C5CA00957FF7;
+			remoteInfo = KDETextView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20F91B991B10C5CA00957FF7 /* KDETextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDETextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F91B9D1B10C5CA00957FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F91BA11B10C5CA00957FF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20F91BA31B10C5CA00957FF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		20F91BA61B10C5CA00957FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		20F91BAC1B10C5CA00957FF7 /* KDETextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDETextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F91BB11B10C5CA00957FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F91BB21B10C5CA00957FF7 /* KDETextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDETextViewTests.m; sourceTree = "<group>"; };
+		20F91BBD1B10C5FC00957FF7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20F91BBE1B10C5FC00957FF7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20F91BC31B10C67A00957FF7 /* edtaa3func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = edtaa3func.h; sourceTree = "<group>"; };
+		20F91BC41B10C67A00957FF7 /* font-manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "font-manager.h"; sourceTree = "<group>"; };
+		20F91BC51B10C67A00957FF7 /* freetype-gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "freetype-gl.h"; sourceTree = "<group>"; };
+		20F91BC61B10C67A00957FF7 /* markup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markup.h; sourceTree = "<group>"; };
+		20F91BC71B10C67A00957FF7 /* mat4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat4.h; sourceTree = "<group>"; };
+		20F91BC81B10C67A00957FF7 /* opengl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opengl.h; sourceTree = "<group>"; };
+		20F91BC91B10C67A00957FF7 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		20F91BCA1B10C67A00957FF7 /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
+		20F91BCB1B10C67A00957FF7 /* text-buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "text-buffer.h"; sourceTree = "<group>"; };
+		20F91BCC1B10C67A00957FF7 /* texture-atlas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "texture-atlas.h"; sourceTree = "<group>"; };
+		20F91BCD1B10C67A00957FF7 /* texture-font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "texture-font.h"; sourceTree = "<group>"; };
+		20F91BCE1B10C67A00957FF7 /* vec234.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec234.h; sourceTree = "<group>"; };
+		20F91BCF1B10C67A00957FF7 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		20F91BD01B10C67A00957FF7 /* vertex-attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "vertex-attribute.h"; sourceTree = "<group>"; };
+		20F91BD11B10C67A00957FF7 /* vertex-buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "vertex-buffer.h"; sourceTree = "<group>"; };
+		20F91BD21B10C67A00957FF7 /* libfreetype-gl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libfreetype-gl.a"; sourceTree = "<group>"; };
+		20F91BD41B10C74E00957FF7 /* KDETextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDETextView.h; sourceTree = "<group>"; };
+		20F91BD51B10C74E00957FF7 /* KDETextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDETextView.m; sourceTree = "<group>"; };
+		20F91BD91B10D2B600957FF7 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../../../../../../../opt/local/lib/libfreetype.a; sourceTree = "<group>"; };
+		20F91BE01B10DC1400957FF7 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20F91B961B10C5CA00957FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F91BDA1B10D2B600957FF7 /* libfreetype.a in Frameworks */,
+				20F91BD31B10C67A00957FF7 /* libfreetype-gl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F91BA91B10C5CA00957FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20F91B901B10C5CA00957FF7 = {
+			isa = PBXGroup;
+			children = (
+				20F91BD91B10D2B600957FF7 /* libfreetype.a */,
+				20F91B9B1B10C5CA00957FF7 /* KDETextView */,
+				20F91BAF1B10C5CA00957FF7 /* KDETextViewTests */,
+				20F91B9A1B10C5CA00957FF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20F91B9A1B10C5CA00957FF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20F91B991B10C5CA00957FF7 /* KDETextView.app */,
+				20F91BAC1B10C5CA00957FF7 /* KDETextViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20F91B9B1B10C5CA00957FF7 /* KDETextView */ = {
+			isa = PBXGroup;
+			children = (
+				20F91BDB1B10D81100957FF7 /* Resources */,
+				20F91BBC1B10C5FC00957FF7 /* Source */,
+				20F91BA31B10C5CA00957FF7 /* Images.xcassets */,
+				20F91BA51B10C5CA00957FF7 /* MainMenu.xib */,
+				20F91B9C1B10C5CA00957FF7 /* Supporting Files */,
+			);
+			path = KDETextView;
+			sourceTree = "<group>";
+		};
+		20F91B9C1B10C5CA00957FF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20F91B9D1B10C5CA00957FF7 /* Info.plist */,
+				20F91BA11B10C5CA00957FF7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20F91BAF1B10C5CA00957FF7 /* KDETextViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				20F91BB21B10C5CA00957FF7 /* KDETextViewTests.m */,
+				20F91BB01B10C5CA00957FF7 /* Supporting Files */,
+			);
+			path = KDETextViewTests;
+			sourceTree = "<group>";
+		};
+		20F91BB01B10C5CA00957FF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20F91BB11B10C5CA00957FF7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20F91BBC1B10C5FC00957FF7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				20F91BBD1B10C5FC00957FF7 /* AppDelegate.h */,
+				20F91BBE1B10C5FC00957FF7 /* AppDelegate.m */,
+				20F91BBF1B10C5FC00957FF7 /* freetype-gl */,
+				20F91BC01B10C5FC00957FF7 /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		20F91BBF1B10C5FC00957FF7 /* freetype-gl */ = {
+			isa = PBXGroup;
+			children = (
+				20F91BC21B10C67A00957FF7 /* includes */,
+				20F91BD21B10C67A00957FF7 /* libfreetype-gl.a */,
+			);
+			path = "freetype-gl";
+			sourceTree = "<group>";
+		};
+		20F91BC01B10C5FC00957FF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20F91BD41B10C74E00957FF7 /* KDETextView.h */,
+				20F91BD51B10C74E00957FF7 /* KDETextView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20F91BC21B10C67A00957FF7 /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				20F91BC31B10C67A00957FF7 /* edtaa3func.h */,
+				20F91BC41B10C67A00957FF7 /* font-manager.h */,
+				20F91BC51B10C67A00957FF7 /* freetype-gl.h */,
+				20F91BC61B10C67A00957FF7 /* markup.h */,
+				20F91BC71B10C67A00957FF7 /* mat4.h */,
+				20F91BC81B10C67A00957FF7 /* opengl.h */,
+				20F91BC91B10C67A00957FF7 /* platform.h */,
+				20F91BCA1B10C67A00957FF7 /* shader.h */,
+				20F91BCB1B10C67A00957FF7 /* text-buffer.h */,
+				20F91BCC1B10C67A00957FF7 /* texture-atlas.h */,
+				20F91BCD1B10C67A00957FF7 /* texture-font.h */,
+				20F91BCE1B10C67A00957FF7 /* vec234.h */,
+				20F91BCF1B10C67A00957FF7 /* vector.h */,
+				20F91BD01B10C67A00957FF7 /* vertex-attribute.h */,
+				20F91BD11B10C67A00957FF7 /* vertex-buffer.h */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		20F91BDB1B10D81100957FF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20F91BE01B10DC1400957FF7 /* shaders */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20F91B981B10C5CA00957FF7 /* KDETextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20F91BB61B10C5CA00957FF7 /* Build configuration list for PBXNativeTarget "KDETextView" */;
+			buildPhases = (
+				20F91B951B10C5CA00957FF7 /* Sources */,
+				20F91B961B10C5CA00957FF7 /* Frameworks */,
+				20F91B971B10C5CA00957FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDETextView;
+			productName = KDETextView;
+			productReference = 20F91B991B10C5CA00957FF7 /* KDETextView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20F91BAB1B10C5CA00957FF7 /* KDETextViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20F91BB91B10C5CA00957FF7 /* Build configuration list for PBXNativeTarget "KDETextViewTests" */;
+			buildPhases = (
+				20F91BA81B10C5CA00957FF7 /* Sources */,
+				20F91BA91B10C5CA00957FF7 /* Frameworks */,
+				20F91BAA1B10C5CA00957FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20F91BAE1B10C5CA00957FF7 /* PBXTargetDependency */,
+			);
+			name = KDETextViewTests;
+			productName = KDETextViewTests;
+			productReference = 20F91BAC1B10C5CA00957FF7 /* KDETextViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20F91B911B10C5CA00957FF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = kode80;
+				TargetAttributes = {
+					20F91B981B10C5CA00957FF7 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					20F91BAB1B10C5CA00957FF7 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 20F91B981B10C5CA00957FF7;
+					};
+				};
+			};
+			buildConfigurationList = 20F91B941B10C5CA00957FF7 /* Build configuration list for PBXProject "KDETextView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20F91B901B10C5CA00957FF7;
+			productRefGroup = 20F91B9A1B10C5CA00957FF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20F91B981B10C5CA00957FF7 /* KDETextView */,
+				20F91BAB1B10C5CA00957FF7 /* KDETextViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20F91B971B10C5CA00957FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F91BE11B10DC1400957FF7 /* shaders in Resources */,
+				20F91BA41B10C5CA00957FF7 /* Images.xcassets in Resources */,
+				20F91BA71B10C5CA00957FF7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F91BAA1B10C5CA00957FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20F91B951B10C5CA00957FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F91BA21B10C5CA00957FF7 /* main.m in Sources */,
+				20F91BD61B10C74E00957FF7 /* KDETextView.m in Sources */,
+				20F91BC11B10C5FC00957FF7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F91BA81B10C5CA00957FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F91BB31B10C5CA00957FF7 /* KDETextViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20F91BAE1B10C5CA00957FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20F91B981B10C5CA00957FF7 /* KDETextView */;
+			targetProxy = 20F91BAD1B10C5CA00957FF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20F91BA51B10C5CA00957FF7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20F91BA61B10C5CA00957FF7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20F91BB41B10C5CA00957FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = /opt/local/lib/libfontconfig.dylib;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		20F91BB51B10C5CA00957FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = /opt/local/lib/libfontconfig.dylib;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		20F91BB71B10C5CA00957FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KDETextView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KDETextView/Source/freetype-gl",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20F91BB81B10C5CA00957FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KDETextView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KDETextView/Source/freetype-gl",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		20F91BBA1B10C5CA00957FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KDETextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KDETextView.app/Contents/MacOS/KDETextView";
+			};
+			name = Debug;
+		};
+		20F91BBB1B10C5CA00957FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KDETextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KDETextView.app/Contents/MacOS/KDETextView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20F91B941B10C5CA00957FF7 /* Build configuration list for PBXProject "KDETextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F91BB41B10C5CA00957FF7 /* Debug */,
+				20F91BB51B10C5CA00957FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20F91BB61B10C5CA00957FF7 /* Build configuration list for PBXNativeTarget "KDETextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F91BB71B10C5CA00957FF7 /* Debug */,
+				20F91BB81B10C5CA00957FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20F91BB91B10C5CA00957FF7 /* Build configuration list for PBXNativeTarget "KDETextViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F91BBA1B10C5CA00957FF7 /* Debug */,
+				20F91BBB1B10C5CA00957FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20F91B911B10C5CA00957FF7 /* Project object */;
+}
