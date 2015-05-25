@@ -8,11 +8,15 @@
 
 #import "AppDelegate.h"
 #import "KDETextView.h"
+#import "KDEWCharString.h"
+
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+
 @end
+
 
 @implementation AppDelegate
 

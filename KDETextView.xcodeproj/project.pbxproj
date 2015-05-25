@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200A36A61B12539900761AAB /* KDETextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A36A51B12539900761AAB /* KDETextView.m */; };
+		200A36A91B12540000761AAB /* KDETextViewFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A36A81B12540000761AAB /* KDETextViewFont.m */; };
+		200A36AF1B1259F100761AAB /* NSString+wchar.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A36AE1B1259F100761AAB /* NSString+wchar.m */; };
+		200A36B21B12619B00761AAB /* KDEWCharString.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A36B11B12619B00761AAB /* KDEWCharString.m */; };
+		200A36B51B127BD600761AAB /* KDETextViewBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A36B41B127BD600761AAB /* KDETextViewBuffer.m */; };
 		20F91BA21B10C5CA00957FF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F91BA11B10C5CA00957FF7 /* main.m */; };
 		20F91BA41B10C5CA00957FF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F91BA31B10C5CA00957FF7 /* Images.xcassets */; };
 		20F91BA71B10C5CA00957FF7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20F91BA51B10C5CA00957FF7 /* MainMenu.xib */; };
 		20F91BB31B10C5CA00957FF7 /* KDETextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F91BB21B10C5CA00957FF7 /* KDETextViewTests.m */; };
 		20F91BC11B10C5FC00957FF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F91BBE1B10C5FC00957FF7 /* AppDelegate.m */; };
 		20F91BD31B10C67A00957FF7 /* libfreetype-gl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F91BD21B10C67A00957FF7 /* libfreetype-gl.a */; };
-		20F91BD61B10C74E00957FF7 /* KDETextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F91BD51B10C74E00957FF7 /* KDETextView.m */; };
 		20F91BDA1B10D2B600957FF7 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F91BD91B10D2B600957FF7 /* libfreetype.a */; };
 		20F91BE11B10DC1400957FF7 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = 20F91BE01B10DC1400957FF7 /* shaders */; };
 /* End PBXBuildFile section */
@@ -29,6 +33,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200A36A01B12519A00761AAB /* VKConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKConsts.h; sourceTree = "<group>"; };
+		200A36A41B12539900761AAB /* KDETextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDETextView.h; sourceTree = "<group>"; };
+		200A36A51B12539900761AAB /* KDETextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDETextView.m; sourceTree = "<group>"; };
+		200A36A71B12540000761AAB /* KDETextViewFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDETextViewFont.h; sourceTree = "<group>"; };
+		200A36A81B12540000761AAB /* KDETextViewFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDETextViewFont.m; sourceTree = "<group>"; };
+		200A36AD1B1259F100761AAB /* NSString+wchar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+wchar.h"; sourceTree = "<group>"; };
+		200A36AE1B1259F100761AAB /* NSString+wchar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+wchar.m"; sourceTree = "<group>"; };
+		200A36B01B12619B00761AAB /* KDEWCharString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDEWCharString.h; sourceTree = "<group>"; };
+		200A36B11B12619B00761AAB /* KDEWCharString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDEWCharString.m; sourceTree = "<group>"; };
+		200A36B31B127BD600761AAB /* KDETextViewBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDETextViewBuffer.h; sourceTree = "<group>"; };
+		200A36B41B127BD600761AAB /* KDETextViewBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDETextViewBuffer.m; sourceTree = "<group>"; };
 		20F91B991B10C5CA00957FF7 /* KDETextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDETextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F91B9D1B10C5CA00957FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F91BA11B10C5CA00957FF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,8 +70,6 @@
 		20F91BD01B10C67A00957FF7 /* vertex-attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "vertex-attribute.h"; sourceTree = "<group>"; };
 		20F91BD11B10C67A00957FF7 /* vertex-buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "vertex-buffer.h"; sourceTree = "<group>"; };
 		20F91BD21B10C67A00957FF7 /* libfreetype-gl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libfreetype-gl.a"; sourceTree = "<group>"; };
-		20F91BD41B10C74E00957FF7 /* KDETextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDETextView.h; sourceTree = "<group>"; };
-		20F91BD51B10C74E00957FF7 /* KDETextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDETextView.m; sourceTree = "<group>"; };
 		20F91BD91B10D2B600957FF7 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../../../../../../../opt/local/lib/libfreetype.a; sourceTree = "<group>"; };
 		20F91BE01B10DC1400957FF7 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +94,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200A36A31B12539900761AAB /* KDETextView */ = {
+			isa = PBXGroup;
+			children = (
+				200A36A41B12539900761AAB /* KDETextView.h */,
+				200A36A51B12539900761AAB /* KDETextView.m */,
+				200A36A71B12540000761AAB /* KDETextViewFont.h */,
+				200A36A81B12540000761AAB /* KDETextViewFont.m */,
+				200A36B31B127BD600761AAB /* KDETextViewBuffer.h */,
+				200A36B41B127BD600761AAB /* KDETextViewBuffer.m */,
+			);
+			path = KDETextView;
+			sourceTree = "<group>";
+		};
 		20F91B901B10C5CA00957FF7 = {
 			isa = PBXGroup;
 			children = (
@@ -141,10 +167,15 @@
 		20F91BBC1B10C5FC00957FF7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				200A36A31B12539900761AAB /* KDETextView */,
 				20F91BBD1B10C5FC00957FF7 /* AppDelegate.h */,
 				20F91BBE1B10C5FC00957FF7 /* AppDelegate.m */,
 				20F91BBF1B10C5FC00957FF7 /* freetype-gl */,
-				20F91BC01B10C5FC00957FF7 /* Views */,
+				200A36A01B12519A00761AAB /* VKConsts.h */,
+				200A36AD1B1259F100761AAB /* NSString+wchar.h */,
+				200A36AE1B1259F100761AAB /* NSString+wchar.m */,
+				200A36B01B12619B00761AAB /* KDEWCharString.h */,
+				200A36B11B12619B00761AAB /* KDEWCharString.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -156,15 +187,6 @@
 				20F91BD21B10C67A00957FF7 /* libfreetype-gl.a */,
 			);
 			path = "freetype-gl";
-			sourceTree = "<group>";
-		};
-		20F91BC01B10C5FC00957FF7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				20F91BD41B10C74E00957FF7 /* KDETextView.h */,
-				20F91BD51B10C74E00957FF7 /* KDETextView.m */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		20F91BC21B10C67A00957FF7 /* includes */ = {
@@ -298,8 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F91BA21B10C5CA00957FF7 /* main.m in Sources */,
-				20F91BD61B10C74E00957FF7 /* KDETextView.m in Sources */,
+				200A36B21B12619B00761AAB /* KDEWCharString.m in Sources */,
+				200A36A61B12539900761AAB /* KDETextView.m in Sources */,
 				20F91BC11B10C5FC00957FF7 /* AppDelegate.m in Sources */,
+				200A36B51B127BD600761AAB /* KDETextViewBuffer.m in Sources */,
+				200A36AF1B1259F100761AAB /* NSString+wchar.m in Sources */,
+				200A36A91B12540000761AAB /* KDETextViewFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +537,7 @@
 				20F91BB81B10C5CA00957FF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20F91BB91B10C5CA00957FF7 /* Build configuration list for PBXNativeTarget "KDETextViewTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +546,7 @@
 				20F91BBB1B10C5CA00957FF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
