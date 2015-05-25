@@ -28,4 +28,11 @@
     // Insert code here to tear down your application
 }
 
+- (IBAction) sliderChanged:(id)sender
+{
+    self.textView.dfThreshold = [sender floatValue];
+    
+    self.window.title = [NSString stringWithFormat:@"threshold: %@", @(self.textView.dfThreshold)];
+}
+
 @end

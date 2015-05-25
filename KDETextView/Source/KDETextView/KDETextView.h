@@ -10,4 +10,6 @@
 
 @interface KDETextView : NSOpenGLView
 
+@property (nonatomic, readwrite, assign) float dfThreshold;
+
 @end

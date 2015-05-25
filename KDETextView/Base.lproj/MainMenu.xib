@@ -13,7 +13,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="glView" destination="FMG-Rq-ph8" id="YmJ-5E-AIZ"/>
+                <outlet property="textView" destination="FMG-Rq-ph8" id="NOc-zo-xQQ"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -677,14 +677,24 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <openGLView colorSize="5bit_RGB_8bit_Alpha" depthSize="16bit" useAuxiliaryDepthBufferStencil="NO" useDoubleBufferingEnabled="YES" allowOffline="YES" wantsBestResolutionOpenGLSurface="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMG-Rq-ph8" customClass="KDETextView">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                        <rect key="frame" x="0.0" y="0.0" width="424" height="360"/>
                     </openGLView>
+                    <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mih-7t-Qgr">
+                        <rect key="frame" x="442" y="17" width="20" height="325"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="2" doubleValue="1" tickMarkPosition="right" sliderType="linear" id="6An-AR-hoZ"/>
+                        <connections>
+                            <action selector="sliderChanged:" target="Voe-Tx-rLC" id="7Tp-yF-G2D"/>
+                        </connections>
+                    </slider>
                 </subviews>
                 <constraints>
                     <constraint firstItem="FMG-Rq-ph8" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="8QO-ak-PIT"/>
+                    <constraint firstAttribute="trailing" secondItem="mih-7t-Qgr" secondAttribute="trailing" constant="20" id="FxT-ko-P0j"/>
+                    <constraint firstItem="mih-7t-Qgr" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="Ico-9w-0v2"/>
                     <constraint firstAttribute="bottom" secondItem="FMG-Rq-ph8" secondAttribute="bottom" id="NJN-JX-OFj"/>
                     <constraint firstItem="FMG-Rq-ph8" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="kOH-OS-lfF"/>
-                    <constraint firstAttribute="trailing" secondItem="FMG-Rq-ph8" secondAttribute="trailing" id="p1j-94-6DP"/>
+                    <constraint firstAttribute="bottom" secondItem="mih-7t-Qgr" secondAttribute="bottom" constant="20" id="uOI-IK-sCy"/>
+                    <constraint firstItem="mih-7t-Qgr" firstAttribute="leading" secondItem="FMG-Rq-ph8" secondAttribute="trailing" constant="20" id="wzs-ze-xzb"/>
                 </constraints>
             </view>
         </window>

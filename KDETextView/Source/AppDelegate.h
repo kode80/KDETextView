@@ -13,7 +13,9 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (weak) IBOutlet KDETextView *glView;
+@property (weak) IBOutlet KDETextView *textView;
+
+- (IBAction) sliderChanged:(id)sender;
 
 @end
 

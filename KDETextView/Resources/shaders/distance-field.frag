@@ -31,17 +31,20 @@
  * policies, either expressed or implied, of Nicolas P. Rougier.
  * ========================================================================= */
 uniform sampler2D texture;
-vec3 glyph_color    = vec3( 0.306, 0.506, 0.533);
+uniform float threshold;
 const float glyph_center   = 0.50;
+
+varying vec4 vcolor;
+varying vec2 vtex_coord;
 
 void main(void)
 {
-    vec4  color = texture2D(texture, gl_TexCoord[0].st);
+    vec4  color = texture2D( texture, vtex_coord.st);
     float dist  = color.r;
     float width = fwidth(dist);
-    float alpha = smoothstep(glyph_center-width, glyph_center+width, dist);
+    float alpha = smoothstep(glyph_center-width, glyph_center+width, dist * threshold);
 
-    gl_FragColor = vec4(glyph_color, alpha);
+    gl_FragColor = vec4( vcolor.rgb, alpha);
 
 }
 
